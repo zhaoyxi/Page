@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>textarea中的神秘空格 | Hexo</title>
+<title>Javascript原型 | Hexo</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -124,9 +124,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="textarea中的神秘空格">
+        <h1 id="Javascript原型">
             
-	            textarea中的神秘空格
+	            Javascript原型
             
         </h1>
         <div class="post-meta">
@@ -134,8 +134,8 @@
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <a href="/Page/categories/ ">
-             
+        <a href="/Page/categories/Javascript">
+            Javascript
         </a>
     </span>
     
@@ -145,8 +145,8 @@
         <span class="tags-meta">
             
                 
-                    <a href="/Page/tags/CSS" title='CSS'>
-                        CSS
+                    <a href="/Page/tags/Javascript" title='Javascript'>
+                        Javascript
                     </a>
                 
             
@@ -158,7 +158,7 @@
         
         <span class="fa-wrap">
             <i class="fa fa-clock-o"></i>
-            <span class="date-meta">2018/04/19</span>
+            <span class="date-meta">2018/04/20</span>
         </span>
     
 </div>
@@ -168,10 +168,10 @@
     </div>
     
     <div class="post-body post-content">
-        <p>前段时间在做移动端页面是突然发现textarea中莫名出现了一大段空格，鼠标可以在里面任意点击。这个问题折腾了好久，后来发现，原来是textarea标签没有写在同一行所致。。。原来是写的时候想代码美观点所以写成了如下形式</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"search"</span>&gt;</span></span><br><span class="line">      &#123;$vo.name&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>但是发现这样会产生好多空格，改成这种形式就好</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"search"</span>&gt;</span>&#123;$vo.name&#125;<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <h3 id="构造函数创建对象"><a href="#构造函数创建对象" class="headerlink" title="构造函数创建对象"></a>构造函数创建对象</h3><p>我们先使用构造函数创建一个对象：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> Person();</span><br><span class="line">person.name = <span class="string">'Kevin'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(person.name) <span class="comment">// Kevin</span></span><br></pre></td></tr></table></figure>
+<p>那什么是原型呢？你可以这样理解：每一个JavaScript对象(null除外)在创建的时候就会与之关联另一个对象，这个对象就是我们所说的原型，每一个对象都会从原型”继承”属性。</p>
+
     </div>
 
     <div class="post-footer">
@@ -186,15 +186,10 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/Page/2018/04/20/Javascript/" class="pre-post btn btn-default" title='Javascript原型'>
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">Javascript原型</span>
-        </a>
     
-    
-        <a href="/Page/2018/04/19/hello-world/" class="next-post btn btn-default" title='Hello World'>
+        <a href="/Page/2018/04/19/My-Gallery/" class="next-post btn btn-default" title='textarea中的神秘空格'>
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">Hello World</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">textarea中的神秘空格</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>
